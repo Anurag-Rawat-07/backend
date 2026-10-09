@@ -2,9 +2,10 @@
   "name": "youtube",
   "version": "1.0.0",
   "description": "a full stack stack youtube like platform",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript",
@@ -14,5 +15,11 @@
     "mongoDB"
   ],
   "author": "Anurag Rawat",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "overrides": {
+    "braces": "^3.0.3"
+  }
 }
