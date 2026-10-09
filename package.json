@@ -1,0 +1,18 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "a full stack stack youtube like platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "backend",
+    "express",
+    "node",
+    "mongoDB"
+  ],
+  "author": "Anurag Rawat",
+  "license": "ISC"
+}
