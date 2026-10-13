@@ -2,8 +2,8 @@ const asyncHandler = (requestHandler) => {
     // You must return the inner function so Express can actually run it
     return (req, res, next) => {
         Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
-    }
-}
+    };
+};
 
 export { asyncHandler }
 // const asyncHandler = (requestHandler) => { ... }
@@ -23,8 +23,6 @@ export { asyncHandler }
 // the Promise will "reject." The .catch grabs that error and passes it to next(err). 
 // In Express, passing an error into next() immediately forwards it to your central error-handling middleware.
 
-
-export {asyncHandler}
 
 // const asyncHandler=()=>{}
 // const asyncHandler=(func)=>()=>{}
